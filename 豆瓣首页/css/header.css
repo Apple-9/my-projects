@@ -1,0 +1,115 @@
+@import"common.css";
+@import"reset.css";
+@import"http://at.alicdn.com/t/font_1623769_lgkjdkfrcur.css";
+header.head {
+    /* background: skyblue; */
+    height: 111px;
+    width: 1230px;
+    margin: 10px auto 0 auto;
+    /* text-align: center; */
+    /* line-height: 111px; */
+}
+
+body {
+    color: #111;
+}
+
+.clearfix::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.head .logo {
+    width: 196px;
+    /* background: red; */
+    margin-left: 20px;
+}
+
+.head .search {
+    width: 270px;
+    /* background: red; */
+    height: 111px;
+    margin: 0 88px 0 14px;
+    position: relative;
+}
+
+.head .nav {
+    width: 632px;
+    /* background: red; */
+    height: 111px;
+}
+
+.head .logo,
+.head .search,
+.head .nav {
+    float: left;
+    line-height: 111px;
+    text-align: center;
+}
+
+.head .search .iconfont {
+    position: absolute;
+    left: 277px;
+    top: -7px;
+    font-size: 19px;
+    color: #ddd;
+    font-weight: bold;
+}
+
+.head .logo img {
+    /* height: 20px; */
+    width: 197px;
+}
+
+.head .search input {
+    border: 1px solid #c3c3c3;
+    height: 30px;
+    width: 302px;
+    box-sizing: border-box;
+    padding-left: 5px;
+    vertical-align: text-bottom;
+}
+
+
+/*?????*/
+
+.head .search input::-webkit-input-placeholder {
+    color: #ddd;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.head .nav li {
+    float: left;
+    margin-right: 18px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "微软雅黑";
+    line-height: 90px;
+}
+
+.head .nav li.stu-tm {
+    color: #6b432d;
+}
+
+.head .nav li.movie {
+    color: #3293d1;
+}
+
+.head .nav li.msc-local {
+    color: #f3840b;
+}
+
+.head .nav li.grp-read {
+    color: #11969e;
+}
+
+.head .nav li.Family {
+    color: #9bd645;
+    font-weight: 600;
+}
+
+.head .nav li.beans {
+    color: #488b43;
+}

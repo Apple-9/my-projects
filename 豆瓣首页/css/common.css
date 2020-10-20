@@ -1,0 +1,21 @@
+button {
+    cursor: pointer;
+}
+
+.clearfix::after {
+    content: "";
+    display: inline-block;
+    clear: both;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.hidden {
+    display: none;
+}

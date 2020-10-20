@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    user-select: none;
+}
+
+input,
+textarea,
+button,
+select {
+    border: none;
+}
+
+input:focus,
+textarea:focus,
+button:focus,
+select:focus {
+    outline: none;
+    outline-offset: 0;
+}
+
+button {
+    padding: 0;
+    background: none;
+}

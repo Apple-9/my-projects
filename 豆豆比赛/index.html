@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>豆豆比赛</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <div class="beginGame">
+        <button class="beginBtn">开始比赛</button>
+    </div>
+    <div class="addPlay">
+        <button class="addPlayerBtn">添加选手</button>
+    </div>
+    <div id="container">
+        <div class="play" my-name="1">
+            <div class="selArea">
+                <button>更换角色</button>
+                <input type="number" class="sel-speed" placeholder="请输入速度(1~10px/ms)">
+            </div>
+            <dis class="showArea">
+                <span>当前路程:</span>
+                <span class="showLeft"></span>
+            </dis>
+            <div class="player">
+                <span class="player-detail">1号</span>
+                <img src="imgs/1.png" alt="" title="你好，我是参赛选手">
+                <!-- <div class="tip"></div> -->
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

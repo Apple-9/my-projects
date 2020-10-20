@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #fff0f6;
+}
+
+.tip {
+    /* display: none; */
+    position: absolute;
+    left: 200px;
+    top: 20px;
+    color: #f40;
+    font-weight: 700;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-weight: 700;
+}
+
+img {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 0px;
+    display: block;
+    cursor: pointer;
+}
+
+.beginGame {
+    /* float: left; */
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.beginGame .beginBtn {
+    background: #67c23a;
+    padding: 10px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.beginGame .beginBtn:hover {
+    background-color: #60b337;
+}
+
+
+/* .addPlay {
+    display: inline-block;
+} */
+
+.addPlay button {
+    padding: 10px;
+    background: #008c8c;
+    color: #fff;
+    border-radius: 20px;
+    margin-left: 30px;
+}
+
+.addPlay button:hover {
+    background-color: #036d6d;
+}
+
+.play {
+    position: relative;
+    margin: 0 30px;
+    /* border: 1px solid; */
+    padding: 25px;
+    margin-top: 20px;
+    background-color: #008c8c;
+    border-radius: 20px;
+    min-width: 500px;
+}
+
+.player {
+    margin-top: 50px;
+    margin-left: 10px;
+    position: relative;
+    height: 60px;
+    padding: 5px 0;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.player .player-detail {
+    position: absolute;
+    left: -30px;
+    color: #fff;
+    font-weight: 700;
+    top: 25px;
+}
+
+input {
+    border-radius: 20px;
+    width: 170px;
+    padding: 8px;
+    outline: none;
+    border: 1px solid;
+}
+
+.showArea,
+.selArea {
+    position: absolute;
+}
+
+.selArea {
+    margin-left: 10px;
+}
+
+.selArea button {
+    background: #b37ba5;
+    padding: 10px;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.selArea button:hover {
+    background-color: #97688c
+}
+
+.showArea {
+    width: 400px;
+    height: 20px;
+    /* border: 1px solid; */
+    color: #fff;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 10px;
+    left: 300px;
+}

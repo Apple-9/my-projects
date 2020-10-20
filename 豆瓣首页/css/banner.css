@@ -1,0 +1,318 @@
+@import"common.css";
+@import"reset.css";
+@import"http://at.alicdn.com/t/font_1623769_17o70aazrnm.css";
+.clearfix::after {
+    content: "";
+    display: inline-block;
+    clear: both;
+}
+
+body {
+    color: #111;
+}
+
+.container {
+    width: 1080px;
+    margin: 0 auto;
+    overflow: hidden;
+    /* background: red; */
+}
+
+a {
+    color: #37a;
+}
+
+a:hover {
+    color: #fff;
+    background: #37a;
+}
+
+a:active {
+    color: #fff;
+    background: #f93;
+}
+
+.banner {
+    background: #edf4ed;
+    position: relative;
+}
+
+.banner .container {
+    width: 950px;
+    height: 340px;
+    /* background: #ddd; */
+    min-width: 950px;
+}
+
+
+/*页面登录*/
+
+.login {
+    width: 280px;
+    /* background: skyblue; */
+    height: 250px;
+    float: right;
+    position: relative;
+    min-width: 280px;
+}
+
+
+/* .switch,
+            .news,
+            .detail,
+            .tel-num,
+            .verify-num,
+            .douban-login,
+            .verify,
+            .third-login {
+                border: 1px solid#000;
+            } */
+
+
+/*定位在父元素上，子代会跟随*/
+
+.switch {
+    width: 30px;
+    position: absolute;
+    right: 0px;
+    top: 0px
+}
+
+.switch img {
+    height: 30px;
+}
+
+.news {
+    margin: 28px 0 10px 0;
+    width: 170px;
+}
+
+.news p {
+    font-weight: 700;
+    font-size: 13px;
+    color: #333;
+    border-bottom: 1px solid #494949;
+}
+
+.detail {
+    padding: 0px 0 10px 0;
+}
+
+.detail span {
+    font-size: 12px;
+    color: #9b9b9b;
+    margin-right: 5px;
+}
+
+.detail a {
+    font-size: 12px;
+    color: #41ac52;
+}
+
+.detail a:hover {
+    color: #41ac52;
+    background-color: initial;
+}
+
+.tel-num {
+    background-color: #fff;
+    width: 280px;
+    box-sizing: border-box;
+}
+
+.tel-num .txt {
+    display: inline-block;
+    padding: 8px;
+    font-weight: 700;
+    font-size: 15px;
+    margin-left: 3px;
+    font-family: "微软雅黑";
+    /* border: 1px solid red; */
+    cursor: pointer;
+}
+
+.tel-num input {
+    border-left: 1px solid #c3c3c3;
+    padding: 4px 0px 4px 10px;
+}
+
+.verify-num {
+    background-color: #fff;
+    width: 280px;
+    box-sizing: border-box;
+    margin: 10px 0;
+    padding: 8px;
+}
+
+.verify-num .txt input {
+    font-size: 13px;
+}
+
+.verify-num .txt a {
+    color: #41ac52;
+    font-size: 13px;
+    /*行级元素左右margin有效*/
+    /* display: inline-block; */
+    margin-left: 34px;
+}
+
+.verify-num .txt a:hover {
+    color: #41ac52;
+    background-color: initial;
+}
+
+.douban-login {
+    background: #41ac52;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+}
+
+.douban-login a {
+    color: #fff;
+}
+
+.douban-login a:hover {
+    color: #fff;
+    background: none;
+}
+
+.verify {
+    /* border: 1px solid red; */
+    padding: 10px 0;
+}
+
+.verify .auto-login {
+    display: inline-block;
+    font-size: 13px;
+    vertical-align: top;
+}
+
+.verify .no-verify {
+    display: inline-block;
+    margin-left: 90px;
+    font-size: 13px;
+}
+
+.verify .no-verify a {
+    color: #41ac52;
+}
+
+.verify .no-verify a:hover {
+    color: #41ac52;
+    background-color: initial;
+}
+
+.third-login {
+    width: 200px;
+    border-top: 1px solid#c3c3c3;
+    padding-top: 10px;
+}
+
+.third-login span {
+    color: #9b9b9b;
+    font-size: 11px;
+    vertical-align: text-top;
+}
+
+.third-login .icon {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.third-login .icon-weixin,
+.third-login .icon-weibo {
+    width: 19px;
+    display: inline-block;
+    /* background-color: red; */
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+}
+
+.third-login .icon-weixin {
+    margin-right: 10px;
+    background-color: rgb(61, 185, 61);
+}
+
+.third-login .icon-weibo {
+    background-color: rgb(252, 85, 24);
+}
+
+
+/*页面登录结束*/
+
+.background {
+    content: "";
+    display: inline-block;
+    background: url(../img/banner-bg.jpg) no-repeat left top/800px;
+    width: 800px;
+    height: 340px;
+    position: absolute;
+    left: 107px;
+    top: 0px;
+}
+
+.app {
+    position: absolute;
+    width: 164px;
+    height: 120px;
+    left: 849px;
+    top: 105px;
+    /* border: 1px solid red; */
+}
+
+.app .app-title {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.app .scb {
+    margin-top: 25px;
+}
+
+.app .scan {
+    border: 1px solid #00B51D;
+    float: right
+}
+
+.app .scan img {
+    height: 32px;
+    display: block;
+}
+
+
+/* .app .scan-login {
+                background: #fff;
+                border: 1px solid #ccc;
+            }
+            
+            .app .scan-login img {
+                width: 160px;
+                height: 160px;
+                padding: 10px;
+            }
+             */
+
+.app .btn {
+    background: #00B51D;
+    border-radius: 2px;
+    width: 100px;
+    padding: 2px 12px;
+    line-height: 30px;
+    text-align: center;
+    display: inline-block;
+}
+
+.app .btn a {
+    color: #FFF;
+    font-size: 12px;
+}
+
+.app .btn a:hover {
+    color: #FFF;
+    background: initial;
+}
+
+
+/*横幅结束*/

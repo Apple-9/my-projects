@@ -1,0 +1,386 @@
+@import "common.css";
+@import "reset.css";
+@import "http://at.alicdn.com/t/font_1623769_17o70aazrnm.css";
+body {
+    color: #9b9b9b;
+    font-family: Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+
+
+/*两者公共样式*/
+
+.form .form-item input[type="text"] {
+    background: #fff;
+    padding: 10px 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 280px;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+
+.login .selected {
+    font-weight: bold;
+    color: #333;
+    border-bottom: 1px solid #494949;
+    padding-bottom: 5px;
+}
+
+.form {
+    height: 180px;
+}
+
+.form .form-item a {
+    color: #41ac52;
+}
+
+.form .form-item {
+    font-size: 12px;
+    margin-top: 10px;
+    position: relative;
+}
+
+
+/*两者公共样式结束*/
+
+
+/*空白折叠占用宽度，所以设置宽要比实际小些*/
+
+.container {
+    width: 300px;
+    height: 300px;
+    padding: 30px 10px 10px 10px;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    /* background: skyblue; */
+    position: relative;
+}
+
+.login .switch {
+    border-bottom: 1px solid #ececec;
+    /* width: 280px; */
+}
+
+.login .switch .left,
+.login .switch .right {
+    width: 50%;
+    font-size: 13px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 1;
+}
+
+.form .form-item .txt {
+    box-sizing: border-box;
+}
+
+.form .form-item .txt a {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.form .form-item .tel-num input {
+    padding-left: 55px;
+}
+
+.form .form-item .country-code {
+    position: absolute;
+    /* border: 1px solid red; */
+    font-size: 15px;
+    cursor: pointer;
+    border-right: 1px solid #ddd;
+    height: 26px;
+    line-height: 26px;
+    margin: 6px 0px;
+    text-align: center;
+    padding: 0px 8px;
+    font-weight: 700;
+    left: 0px;
+    top: 0px;
+    color: #333;
+}
+
+.form-item .country-code .choose-area {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .5);
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.contain {
+    width: 285px;
+    height: 225px;
+    position: absolute;
+    box-sizing: border-box;
+    border: 1px solid #bbb;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+    border-radius: 5px;
+    cursor: auto;
+    overflow: hidden;
+}
+
+.choose-area .contain .title {
+    background: #ebf5eb;
+    height: 42px;
+    line-height: 42px;
+    /*居左*/
+    text-align: left;
+    padding-left: 10px;
+    color: #060;
+    font-weight: bold;
+    position: relative;
+}
+
+.choose-area .contain .title h3 {
+    color: #060;
+}
+
+.choose-area .contain ul {
+    overflow: auto;
+    height: 150px;
+    padding: 20px 5px 5px 5px;
+}
+
+.choose-area .contain ul li {
+    border-top: 1px solid #9b9b9b;
+    color: #494949;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 2.6;
+}
+
+.choose-area .contain ul li span.right {
+    color: #aaa;
+}
+
+.choose-area .contain ul li.active span {
+    color: #42bd56;
+}
+
+.choose-area .contain ul li:last-child {
+    border-bottom: 1px solid #9b9b9b;
+}
+
+.choose-area .contain .close a {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    color: #aaa;
+    right: 5px;
+    top: 2px;
+}
+
+
+/*codes-hidden over*/
+
+.form .form-item .verify-num input,
+.form .form-item .password input {
+    padding-left: 13px;
+}
+
+.form .form-item .get-verify {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+}
+
+.form .form-item .get-verify a {
+    font-size: 13px;
+}
+
+.form .form-item .douban-login {
+    background-color: #41ac52;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    height: 26px;
+    width: 278px;
+    text-align: center;
+    line-height: 26px;
+    padding: 4px 0;
+}
+
+.form .form-item .douban-login:hover {
+    background-color: #3c994b;
+}
+
+.form .form-item .douban-login a {
+    color: #fff;
+}
+
+
+/*密码登录*/
+
+.form .form-item .find-password {
+    float: right;
+}
+
+.form .form-item .tel-nums input {
+    padding-left: 13px;
+}
+
+
+/*密码登录结束*/
+
+
+/*扫码登录*/
+
+
+/*父定位子跟随*/
+
+.QR {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.QR img {
+    width: 30px;
+    height: 30px;
+}
+
+.QR span {
+    display: none;
+}
+
+.QR:hover span {
+    display: block;
+    position: absolute;
+    height: 20px;
+    border: 1px solid rgba(66, 189, 86, .3);
+    color: #666;
+    font-size: 13px;
+    border-radius: 3px;
+    background: #f5faf9;
+    top: 1px;
+    right: 44px;
+    padding: 0px 6px;
+    white-space: nowrap;
+}
+
+.QR:hover::after {
+    content: "";
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-top: 1px solid rgba(66, 189, 86, .3);
+    border-right: 1px solid rgba(66, 189, 86, .3);
+    background: #f5faf9;
+    /*顺时针旋转45度*/
+    transform: rotate(45deg);
+    position: absolute;
+    right: 38px;
+    top: 7px;
+    z-index: 0;
+}
+
+
+/*扫码登录结束*/
+
+
+/*切换二维码*/
+
+.login .QR-login .switch-code {
+    width: 300px;
+    height: 300px;
+    background-color: #edf4ed;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.login .QR-login .switch-code p {
+    font-size: 13px;
+    color: #333;
+    padding-top: 16px;
+    font-weight: 600;
+}
+
+.login .QR-login .switch-code .switch-QR {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    right: 0;
+}
+
+.login .QR-login .switch-code .QR-code {
+    width: 172px;
+    height: 172px;
+    position: absolute;
+    margin: 25px 0px 0px 50px;
+}
+
+.login .open-client {
+    border-radius: 12px;
+    /* margin-top: 10px; */
+    background-color: rgba(0, 0, 0, .08);
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+    bottom: 35px;
+    left: 51px;
+    padding: 3px 17px;
+}
+
+.login .open-client a {
+    color: #494949;
+    font-size: 12px;
+}
+
+
+/*切换二维码结束*/
+
+
+/*第三方登录*/
+
+.form .form-item .else-server a {
+    float: right;
+}
+
+.third-login {
+    margin-top: 10px;
+    width: 250px;
+    border-top: 1px solid #c3c3c3;
+    padding: 10px 0;
+}
+
+.third-login span {
+    font-size: 12px;
+}
+
+.third-login .iconfont {
+    display: inline-block;
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.third-login .iconfont.icon-weixin {
+    background-color: #41ac52;
+}
+
+.third-login .iconfont.icon-weibo {
+    background: rgb(184, 121, 5);
+}
+
+
+/*第三方登录结束*/
+
+.hidden {
+    display: none;
+}

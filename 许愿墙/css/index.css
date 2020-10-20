@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    min-width: 300px;
+    background-color: #008c8c;
+}
+
+#container {
+    position: relative;
+}
+
+.card {
+    width: 150px;
+    height: 150px;
+    /* background: #008c8c; */
+    position: absolute;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.card span {
+    position: absolute;
+    right: 2px;
+    top: 0px;
+    font-weight: 600;
+    cursor: pointer;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+#textInput {
+    /* position: absolute; */
+    position: fixed;
+    /* 视口的底部中间 */
+    left: 0;
+    right: 0;
+    bottom: 30px;
+    margin: auto;
+    padding: 0 10px;
+    width: 500px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
